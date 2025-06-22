@@ -13,7 +13,29 @@ body {
   scrollbar-width: thin;
   scrollbar-color: #00ffff #0f172a;
 }
-
+.scroll-top,
+.scroll-bottom {
+  position: fixed;
+  right: 20px;
+  background: #333;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 50%;
+  font-size: 18px;
+  z-index: 999;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.scroll-top {
+  bottom: 80px;
+}
+.scroll-bottom {
+  bottom: 20px;
+}
+.scroll-top:hover,
+.scroll-bottom:hover {
+  background: #007bff;
+}
 /* Scrollbar Styling (Chrome) */
 ::-webkit-scrollbar {
   width: 10px;
@@ -89,7 +111,22 @@ social-media {
   background: #0ef;
   color: #081b29;
 }
-
+.resume-btn {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+  z-index: 999;
+}
+.resume-btn:hover {
+  background-color: #0056b3;
+}
 
 
 /* Home Section */
@@ -460,7 +497,7 @@ body {
 
 .certificate-card p {
   font-size: 15px;
-  line-height: 1.4;
+  line-height: 1.4;
 }
 .download-btn {
   display: inline-block;
@@ -476,9 +513,89 @@ body {
 .download-btn:hover {
   background-color: #00e6e6;
 }
+body {
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+.projects {
+  text-align: center;
+  padding: 20px;
+}
+
+.projects h2 {
+  color: #00ffff;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #1c1c1e;
+  border: 2px solid #00ffff;
+  border-radius: 15px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card h3 {
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.tech-stack span {
+  background-color: #333;
+  color: #00ffff;
+  margin: 4px;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 8px 14px;
+  background-color: #00ffff;
+  color: #000;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #00cccc;
+}
 #contact {
   padding: 60px 20px;
-  background-color: #06202c;
+  background-color: #01283a;
   color: white;
 }
 
